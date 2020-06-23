@@ -9,8 +9,8 @@ var dbConnect = function () {
         connectionLimit: 100,
         waitForConnections: false,
         host: 'localhost',
-        user: 'root',
-        password: 'root',
+        user: process.env.USERNAME,
+        password: process.env.PASSWORD,
         database: 'knowledgebase',
         dateStrings: true,
         acquireTimeout: 99999999
